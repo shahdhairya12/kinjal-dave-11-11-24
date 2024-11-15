@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinjal Dave Event - Spec Campus, Bokal, Anand</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ff89b5, #e769ff);
+            color: #fff;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            overflow-x: hidden;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Navigation Styles */
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .nav button {
+            padding: 10px 20px;
+            background-color: #ff2a6d;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .nav button:hover {
+            background-color: #d11b59;
+        }
+
+        /* Section Styles */
+        .section {
+            display: none;
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        .active {
+            display: block;
+        }
+
+        /* Gallery Styles */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            animation: slideInUp 0.6s ease;
+        }
+        .gallery-item img,
+        .gallery-item video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover img,
+        .gallery-item:hover video {
+            transform: scale(1.05);
+        }
+
+        /* Download Button and Home Button */
+        .button {
+            display: block;
+            width: 250px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #ff2a6d;
+            color: #fff;
+            text-align: center;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .button:hover {
+            background-color: #d11b59;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <div class="nav">
+       
+        
+        <button onclick="showSection('gallery')">Gallery</button>
+    </div>
+
+    <!-- Home Section -->
+   
+
+    <!-- Gallery Section -->
+    <div id="gallery" class="section">
+        <h1>Event Gallery from Kinjal dave coming Anand 11-11-24</h1>
+        <h1>Photos</h1>
+        <div class="gallery" id="mediaGallery">
+            <div class="gallery-item">
+                <img src="1.DNG">
+            </div>
+            <div class="gallery-item">
+                <img src="2.DNG">
+            </div>
+            <div class="gallery-item">
+                <img src="3.DNG">
+            </div>
+            <div class="gallery-item">
+                <img src="4.DNG">
+            </div>
+            <div class="gallery-item">
+                <img src="5.DNG">
+            </div>
+            <div class="gallery-item">
+                <img src="6.DNG">
+            </div>
+            <div class="gallery-item">
+                <img src="7.DNG">
+            </div>
+            <div class="gallery-item">
+                <img src="8.DNG">
+            </div>
+            <div class="gallery-item">
+                <img src="10.DNG">
+            </div>
+            <div class="gallery-item">
+                <img src="11.DNG">
+            </div>
+            <div class="gallery-item">
+                <img src="12.DNG">
+            </div>
+            <div class="gallery-item">
+                <img src="13.DNG">
+            </div>
+            <div class="gallery-item">
+                <img src="14.DNG">
+            </div>
+            <div class="gallery-item">
+                <img src="16.DNG">
+            </div>
+            <div class="gallery-item">
+                <img src="17.DNG">
+            </div>
+            <div class="gallery-item">
+                <img src="19.DNG">
+            </div>
+            <div class="gallery-item">
+                <img src="20.DNG">
+            </div>
+            <div class="gallery-item">
+                <img src="21.DNG">
+            </div>
+            <div class="gallery-item">
+                <img src="22.DNG">
+            </div>
+            <div class="gallery-item">
+                <img src="24.DNG">
+            </div>
+            <div class="gallery-item">
+                <img src="25.DNG">
+            </div>
+            <div class="gallery-item">
+                <img src="27.DNG">
+            </div>
+            <div class="gallery-item">
+                <img src="28.DNG">
+            </div>
+            <div class="gallery-item">
+                <img src="30.DNG">
+            </div>
+            <div class="gallery-item">
+                <img src="31.DNG">
+            </div>
+            <div class="gallery-item">
+                <img src="32.DNG">
+            </div>
+            <div class="gallery-item">
+                <img src="33.DNG">
+            </div><br><br><br></div>
+            <h1>Videos</h1>
+            <div class="gallery" id="mediaGallery">
+            <div class="gallery-item">
+                <video controls>
+                    <source src="1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="19.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="20.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="23.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="24.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="VID-20241112-WA0003.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="VID-20241112-WA0004.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="VID-20241112-WA0005.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="VID-20241112-WA0006.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="VID-20241112-WA0007.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="VID-20241112-WA0008.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="VID-20241112-WA0009.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="VID-20241112-WA0010.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="VID-20241112-WA0011.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="VID-20241112-WA0012.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="VID-20241112-WA0013.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="VID-20241112-WA0014.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="VID-20241112-WA0015.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="VID-20241112-WA0016.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="VID-20241112-WA0017.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <button class="button" id="downloadAll">Download All Media</button>
+        
+    </div>
+
+    <script>
+        // Function to switch between sections
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+
+        // Function to fetch a file as a Blob
+        async function fetchFile(url) {
+            const response = await fetch(url);
+            return response.blob();
+        }
+
+        // Function to download all media as a ZIP file
+        document.getElementById('downloadAll').addEventListener('click', async () => {
+            const zip = new JSZip();
+            const mediaFiles = [
+                { url: '1.dng', name: '1.dng' },
+                { url: '2.dng', name: '2.dng' },
+                { url: '3.dng', name: '3.dng' },
+                { url: '4.dng', name: '4.dng' },
+                { url: '5.dng', name: '5.dng' },
+                { url: '6.dng', name: '6.dng' },
+                { url: '7.dng', name: '7.dng' },
+                { url: '8.dng', name: '8.dng' },
+                { url: '10.dng', name: '10.dng' },
+                { url: '11.dng', name: '11.dng' },
+                { url: '12.dng', name: '12.dng' },
+                { url: '13.dng', name: '13.dng' },
+                { url: '14.dng', name: '14.dng' },
+                { url: '16.dng', name: '16.dng' },
+                { url: '17.dng', name: '17.dng' },
+                { url: '19.dng', name: '19.dng' },
+                { url: '20.dng', name: '20.dng' },
+                { url: '21.dng', name: '21.dng' },
+                { url: '22.dng', name: '22.dng' },
+                { url: '24.dng', name: '24.dng' },
+                { url: '25.dng', name: '25.dng' },
+                { url: '27.dng', name: '27.dng' },
+                { url: '28.dng', name: '28.dng' },
+                { url: '30.dng', name: '30.dng' },
+                { url: '31.dng', name: '31.dng' },
+                { url: '32.dng', name: '32.dng' },
+                { url: '33.dng', name: '33.dng' }
+            ];
+
+            for (const file of mediaFiles) {
+                const blob = await fetchFile(file.url);
+                zip.file(file.name, blob);
+            }
+
+            zip.generateAsync({ type: 'blob' }).then(content => {
+                const link = document.createElement('a');
+                link.href = URL.createObjectURL(content);
+                link.download = 'kinjal_dave_event_media.zip';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            });
+
+            alert('Download started! The ZIP file is being created. Prepared By Shah Dhairya H. ');
+        });
+    </script>
+
+</body>
+</html>
